@@ -34,7 +34,7 @@ h1 {
 /* 위는 공통요소 */
 
 .intro_bg {
-    background-image: url("img/bg.jpg");
+    background-image: url("./bg.jpg");
     background-size: 100% 718px;
     width: 100%;
     height: 718px;
@@ -195,7 +195,7 @@ h1 {
 .main_text2 {
     width: 100%;
     height: 418px;
-    background-image: url("img/bg2.jpg");
+    background-image: url("./bg2.jpg");
 }
 .main_text2 > ul {
     display:flex;

@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>wonjin홈페이지</title>
-        <link rel="stylesheet" type="text/css" href="midDesign.css ">
+        <link rel="stylesheet" type="text/css" href="{% static 'home/css/midDesign.css' %} ">
     </head>
     <body>
         <!-- intro start -->
@@ -65,7 +66,7 @@
             <ul class="icons">
                 <li>
                     <div class="icon_img">
-                        <img src="img/person_img.png" alt="사람픽토그램">
+                        <img src="{% static 'home/image/person_img.png' %}" alt="사람픽토그램">
                     </div>
                     <div class="contents1_bold">기본정보</div>
                     <div class="contents2">
@@ -78,7 +79,7 @@
                 </li>
                 <li>
                     <div class="icon_img">
-                        <img src="img/hobby_img.jpg" alt="취미픽토그램">
+                        <img src="{% static 'home/image/hobby_img.jpg' %}" alt="취미픽토그램">
                     </div>
                     <div class="contents1_bold">취미생활</div>
                     <div class="contents2">
@@ -91,7 +92,7 @@
                 </li>
                 <li>
                     <div class="icon_img">
-                        <img src="img/school_img.jpg" alt="학교픽토그램">
+                        <img src="{% static 'home/image/school_img.jpg' %}" alt="학교픽토그램">
                     </div>
                     <div class="contents1_bold">학교정보</div>
                     <div class="contents2">
@@ -110,7 +111,7 @@
             <div class="contents1"></div>
             <div class="brag">
                 <div class="video"> 
-                    <video class="tto" src="img/ttotto.mp4" type = "video/mp4" controls></video>
+                    <video class="tto" src="{% static 'home/image/ttotto.mp4' %}" type = "video/mp4" controls></video>
                 </div>
                 <div class="contents2">
                     <h2>내 최애</h2>
@@ -137,7 +138,7 @@
                         <div><h1>TIMETABLE</h1></div>
                         <div>3학년 1학기 시간표</div>
                         <div class="more2">
-                            <a href="img/timetable.jpg" target="_blank">더 알아보기</a>
+                            <a href="{% static 'home/image/timetable.jpg' %}" target="_blank">더 알아보기</a>
                         </div>
                     </li>
                     <li></li>
