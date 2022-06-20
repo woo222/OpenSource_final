@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>wonjin홈페이지</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'home/css/midDesign.css' %} ">
+    </head>
+    <body>
+        <!-- intro start -->
+        <div class="wrap">
+            <div class="intro_bg">
+                <div class="header" id="link_header">
+                    <div class="search_area">
+                        <form>
+                            <input type="search" placeholder="Search">
+                            <a onclick="alert('검샘 기능 없음');" style="cursor:pointer;">
+                                <span>검색</span>
+                            </a>
+                        </form>
+                    </div>
+                    <ul class="nav">
+                        <li><a href="#link_header">HOME</a></li>
+                        <li><a href="#link_about">ABOUT</a></li>
+                        <li><a href="#link_brag">BRAG</a></li>
+                        <li><a href="#link_timetable">TIMETABLE</a></li>
+                    </ul>
+                </div>
+                <div class="intro_text">
+                    <h1> Song WonJin </h1>
+                </div>
+            </div>
+        </div>
+        <!--intro end-->
+        <ul class = "amount">
+            <li>
+                <div>
+                    <div class="contents1">이름</div>
+                    <div class="result">송원진</div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">학교</div>
+                    <div class="result">단국대학교</div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">학과</div>
+                    <div class="result">소프트웨어학과</div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">학번</div>
+                    <div class="result">32202319</div>
+                </div>
+            </li>
+        </ul>
+        <!-- amount end -->
+        <div class="main_text0" id ="link_about">
+            <h1>ABOUT</h1>
+            <div class="contents1">Song Wonjin's profile</div>
+
+            <ul class="icons">
+                <li>
+                    <div class="icon_img">
+                        <img src="{% static 'home/image/person_img.png' %}" alt="사람픽토그램">
+                    </div>
+                    <div class="contents1_bold">기본정보</div>
+                    <div class="contents2">
+                        나에 대한 가장 기본적인 정보들<br>
+                        생일, 성격, 장점, 단점
+                    </div>
+                    <div class="more">
+                        <a href="./bagicInformation.html" target="_blank">MORE</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon_img">
+                        <img src="{% static 'home/image/hobby_img.jpg' %}" alt="취미픽토그램">
+                    </div>
+                    <div class="contents1_bold">취미생활</div>
+                    <div class="contents2">
+                        자랑할만한 취미생활들<br>
+                        handmade
+                    </div>
+                    <div class="more">
+                        <a onclick="alert('비밀번호\n OpenSource');" style="cursor:pointer;" href="https://wonjin.tistory.com/category/Like/handmade" target="_blank">MORE</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon_img">
+                        <img src="{% static 'home/image/school_img.jpg' %}" alt="학교픽토그램">
+                    </div>
+                    <div class="contents1_bold">학교정보</div>
+                    <div class="contents2">
+                        단국대학교 소프트웨어학과 재학생<br>
+                        32202319 3학년
+                    </div>
+                    <div class="more">
+                        <a href="./schoolInformation.html" target="_blank">MORE</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main_text1" id="link_brag">
+            <h1>BRAG</h1>
+            <div class="contents1"></div>
+            <div class="brag">
+                <div class="video"> 
+                    <video class="tto" src="{% static 'home/image/ttotto.mp4' %}" type = "video/mp4" controls></video>
+                </div>
+                <div class="contents2">
+                    <h2>내 최애</h2>
+
+                    이름 : 또또
+                    <br><br>
+                    성별 : 여자
+                    <br><br>
+                    나이 : 7살쯤 추정
+                    <br><br>
+                    생일 : 10월 9일
+                    <br><br>
+                    kind : 코리안 숏 헤어
+                    <br><br>
+                    특징 : <br>
+                    - 애교가 많고, 사람 좋아함.<br>
+                    - 평균 고양이에 비해 포동포동하여 더 귀여움
+                </div>
+            </div>
+
+            <div class="main_text2" id="link_timetable">
+                <ul>
+                    <li>
+                        <div><h1>TIMETABLE</h1></div>
+                        <div>3학년 1학기 시간표</div>
+                        <div class="more2">
+                            <a href="{% static 'home/image/timetable.jpg' %}" target="_blank">더 알아보기</a>
+                        </div>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+            <footer>
+                <div>
+                    WonJin
+                </div>
+                <div>
+                    wjsong0204@dankook.ac.kr<br>
+                    COPYRIGHT 2022.
+                </div>
+            </footer>
+        </div>
+    </body>
+    </html>
