@@ -122,6 +122,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')     #나중에 static 폴더를 모을 때 이곳에 모이게 됩니다.
+"""
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]                                                                 # app에서 static파일을 못 찾으면 여기 경로에서 찾게 합니다.
@@ -131,4 +132,4 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')"""
